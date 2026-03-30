@@ -8,7 +8,7 @@
 // AUFGABE 1 – Beantworte folgende Fragen hier als Kommentar:
 //
 // Frage 1: Wie viele Entscheidungsknoten (Rauten) hat der PAP?
-// Antwort: 
+// Antwort: 6
 //
 // Frage 2: Unter welchen Bedingungen endet das Programm frühzeitig?
 // Antwort: 
@@ -28,7 +28,10 @@
 // ── Schritt 1: Programmtitel ausgeben ───────────────────────
 // Tipp: Nutze Console.WriteLine() für die Titelbox.
 // TODO: Ausgabe der Titelzeile (wie im Beispiel in der README)
-
+Console.WriteLine("**Fach:**C# Grundlagen  \r\n");
+Console.WriteLine(">**Thema:**Programmablaufplan(PAP) & Kontrollstrukturen");
+Console.WriteLine("> **Schwierigkeit:** ⭐⭐ Mittel");
+Console.WriteLine("> **Bearbeitungszeit:**ca. 90 Minuten");
 
 // ── Schritt 2: Eingabe – Name ────────────────────────────────
 // TODO: Benutzernamen einlesen (string, kein TryParse nötig)
