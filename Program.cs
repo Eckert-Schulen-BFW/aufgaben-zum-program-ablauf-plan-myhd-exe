@@ -33,7 +33,7 @@ string name = Console.ReadLine();
 Console.Write("Bitte Gewicht eingeben:");
 string stringgewicht = Console.ReadLine();
 bool gewichtBool = double.TryParse(stringgewicht, out gewicht); // gewicht eingabe
-if (gewichtBool == true)
+if (gewichtBool == true && gewicht >= 0)
 {
     Console.Write("Bitte größe in Meter eingeben:");
     bool größeBool = double.TryParse(Console.ReadLine(), out größe); // größe eingabe
