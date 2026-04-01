@@ -37,7 +37,7 @@ if (gewichtBool == true)
 {
     Console.Write("Bitte größe in Meter eingeben:");
     bool größeBool = double.TryParse(Console.ReadLine(), out größe); // größe eingabe
-    if (größeBool == true && größe != 0) // Richtige eingabe und ist nicht 0
+    if (größeBool == true && größe >= 0) // Richtige eingabe und ist nicht 0
     {
         bmi = gewicht / (größe * größe); // bmi ausrechnen
         if (bmi < 18.5)

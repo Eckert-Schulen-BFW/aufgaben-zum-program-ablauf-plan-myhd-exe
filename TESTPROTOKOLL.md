@@ -17,8 +17,9 @@ Führe alle Testfälle aus und notiere die tatsächliche Ausgabe deines Programm
 | **Eingabe Gewicht** | 70 |
 | **Eingabe Größe** | 1.75 |
 | **Erwartete Kategorie** | Normalgewicht |
-| **Tatsächliche Ausgabe** | *(hier einfügen)* |
-| **✅ Bestanden?** | Ja / Nein |
+| **Tatsächliche Ausgabe** | *Hallo Max Mustermann, dein Bmi ist 0,00 bei einer Größe von 175
+BMI: Untergewicht* |
+| **✅ Bestanden?** | Nein |
 
 ---
 
@@ -30,8 +31,9 @@ Führe alle Testfälle aus und notiere die tatsächliche Ausgabe deines Programm
 | **Eingabe Gewicht** | 50 |
 | **Eingabe Größe** | 1.70 |
 | **Erwartete Kategorie** | Untergewicht |
-| **Tatsächliche Ausgabe** | *(hier einfügen)* |
-| **✅ Bestanden?** | Ja / Nein |
+| **Tatsächliche Ausgabe** | *Hallo Lisa Beispiel, dein Bmi ist 0,00 bei einer Größe von 170
+BMI: Untergewicht |
+| **✅ Bestanden?** | Nein |
 
 ---
 
@@ -43,8 +45,9 @@ Führe alle Testfälle aus und notiere die tatsächliche Ausgabe deines Programm
 | **Eingabe Gewicht** | 95 |
 | **Eingabe Größe** | 1.75 |
 | **Erwartete Kategorie** | Übergewicht |
-| **Tatsächliche Ausgabe** | *(hier einfügen)* |
-| **✅ Bestanden?** | Ja / Nein |
+| **Tatsächliche Ausgabe** | *Hallo Tom Tester, dein Bmi ist 0,00 bei einer Größe von 175
+BMI: Untergewicht* |
+| **✅ Bestanden?** | Nein |
 
 ---
 
@@ -56,8 +59,9 @@ Führe alle Testfälle aus und notiere die tatsächliche Ausgabe deines Programm
 | **Eingabe Gewicht** | 120 |
 | **Eingabe Größe** | 1.75 |
 | **Erwartete Kategorie** | Starkes Übergewicht |
-| **Tatsächliche Ausgabe** | *(hier einfügen)* |
-| **✅ Bestanden?** | Ja / Nein |
+| **Tatsächliche Ausgabe** | *Hallo Anna Admin, dein Bmi ist 0,00 bei einer Größe von 175
+BMI: Untergewicht* |
+| **✅ Bestanden?** | Nein |
 
 ---
 
@@ -69,8 +73,10 @@ Führe alle Testfälle aus und notiere die tatsächliche Ausgabe deines Programm
 | **Eingabe Gewicht** | `abc` |
 | **Eingabe Größe** | (entfällt) |
 | **Erwartet** | Fehlermeldung, Programm endet |
-| **Tatsächliche Ausgabe** | *(hier einfügen)* |
-| **✅ Bestanden?** | Ja / Nein |
+| **Tatsächliche Ausgabe** | *Bitte Namen eingeben:Fehler-Test
+Bitte Gewicht eingeben:abc
+Fehler - Ungültige Eingabe* |
+| **✅ Bestanden?** | Nein |
 
 ---
 
@@ -82,8 +88,8 @@ Führe alle Testfälle aus und notiere die tatsächliche Ausgabe deines Programm
 | **Eingabe Gewicht** | 70 |
 | **Eingabe Größe** | -1 |
 | **Erwartet** | Fehlermeldung (Größe ungültig), Programm endet |
-| **Tatsächliche Ausgabe** | *(hier einfügen)* |
-| **✅ Bestanden?** | Ja / Nein |
+| **Tatsächliche Ausgabe** | Fehler - Größe muss postiv sein |
+| **✅ Bestanden?** |  Nein |
 
 ---
 
@@ -91,12 +97,13 @@ Führe alle Testfälle aus und notiere die tatsächliche Ausgabe deines Programm
 
 ### Frage 1
 > Was passiert, wenn jemand `1,75` statt `1.75` als Größe eingibt? Teste es! Wie könnte man das Problem lösen?
+das würde jede aufgabe richtig ausgeben :D da er den . löscht
 
 **Beobachtung beim Test:**  
-*(hier einfügen)*
+das alle mit . nicht funktionieren xD
 
 **Mögliche Lösung:**  
-*(hier einfügen)*
+, nutzen bei eingabe
 
 ---
 
@@ -104,7 +111,7 @@ Führe alle Testfälle aus und notiere die tatsächliche Ausgabe deines Programm
 > Warum ist die Reihenfolge der `if-else-if`-Bedingungen wichtig? Was würde passieren, wenn du mit `BMI < 30` anfängst?
 
 **Antwort:**  
-*(hier einfügen)*
+So prüft er von groß nach klein und nicht von klein nach groß
 
 ---
 
@@ -112,7 +119,7 @@ Führe alle Testfälle aus und notiere die tatsächliche Ausgabe deines Programm
 > Der PAP zeigt, dass `groesse > 0` **nach** TryParse geprüft wird. Warum macht diese Reihenfolge Sinn?
 
 **Antwort:**  
-*(hier einfügen)*
+weil erst überhaupt geprüft wird das etwas richtig eingeben wurde, und man das in der IF selbst prüfen kann
 
 ---
 
