@@ -32,25 +32,25 @@ Console.Write("Bitte Namen eingeben:");
 string name = Console.ReadLine();
 Console.Write("Bitte Gewicht eingeben:");
 string stringgewicht = Console.ReadLine();
-bool gewichtBool = double.TryParse(stringgewicht, out gewicht);
+bool gewichtBool = double.TryParse(stringgewicht, out gewicht); // gewicht eingabe
 if (gewichtBool == true)
 {
     Console.Write("Bitte größe in Meter eingeben:");
-    bool größeBool = double.TryParse(Console.ReadLine(), out größe);
-    if (größeBool == true && größe != 0)
+    bool größeBool = double.TryParse(Console.ReadLine(), out größe); // größe eingabe
+    if (größeBool == true && größe != 0) // Richtige eingabe und ist nicht 0
     {
-        bmi = gewicht / (größe * größe);
-        if (bmi <= 18.5)
+        bmi = gewicht / (größe * größe); // bmi ausrechnen
+        if (bmi < 18.5)
         {
             Console.WriteLine($"Hallo {name}, dein Bmi ist{bmi:F2} bei einer Größe von {größe}");
             Console.WriteLine($"BMI: Untergewicht");
         }
-        else if (bmi <= 25.0)
+        else if (bmi < 25.0)
         {
             Console.WriteLine($"Hallo {name}, dein Bmi ist{bmi:F2} bei einer Größe von {größe}");
             Console.WriteLine("BMI:Normalgewicht");
         }
-        else if (bmi <= 30.0)
+        else if (bmi < 30.0)
         {
             Console.WriteLine($"Hallo {name}, dein Bmi ist{bmi:F2} bei einer Größe von {größe}");
             Console.WriteLine("BMI:Übergewicht");
@@ -63,12 +63,12 @@ if (gewichtBool == true)
     }
     else
     {
-        Console.WriteLine("Fehler - Größe muss postiv sein");
+        Console.WriteLine("Fehler - Größe muss postiv sein"); // falsche eingabe nach größe
     }
 }
 else
 {
-    Console.WriteLine("Fehler - Ungültige Eingabe");
+    Console.WriteLine("Fehler - Ungültige Eingabe"); // falsche eingabe bei Meter
 }
 
 // ── Schritt 1: Programmtitel ausgeben ───────────────────────
@@ -112,7 +112,7 @@ Console.WriteLine("> **Bearbeitungszeit:**ca. 90 Minuten");
 //
 // 💭 Denkfrage: Warum reicht bei "Normalgewicht" die Bedingung BMI < 25.0 aus,
 //               obwohl laut WHO-Tabelle auch BMI >= 18.5 gelten muss?
-
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  Weil es mit > 18.5 auch abgedeckt ist und noch ein < 30 folgt. somit ist alles abgedeckt wie es die WHO vorgibt
 
 // ── Schritt 7: Ergebnis ausgeben ─────────────────────────────
 // TODO: Gib Name, BMI (auf 2 Dezimalstellen) und Kategorie formatiert aus
