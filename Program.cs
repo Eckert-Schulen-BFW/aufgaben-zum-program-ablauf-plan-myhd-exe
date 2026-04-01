@@ -11,19 +11,65 @@
 // Antwort: 6
 //
 // Frage 2: Unter welchen Bedingungen endet das Programm frühzeitig?
-// Antwort: 
+// Antwort:   erster tryparse geht nein weg
 //
 // Frage 3: Warum wird TryParse statt Convert.ToDouble() verwendet?
-// Antwort: 
+// Antwort: weil TryParse kein Programm absturz verursacht wenn man was falsches eingibt
 //
 // Frage 4: Welchen Datentyp sollen gewicht und groesse haben, und warum?
-// Antwort: 
+// Antwort:  double wegen komma
 //
 // ============================================================
 
 // TODO: Schreibe dein Programm unterhalb dieser Zeile.
 //       Orientiere dich dabei am PAP in der README.md.
 //       Jeder Schritt im PAP sollte einer Zeile / einem Block in deinem Code entsprechen.
+Console.WriteLine("╔══════════════════════════════════╗");
+Console.WriteLine("║        BMI - Rechner v1.0        ║");
+Console.WriteLine("╚══════════════════════════════════╝");
+double gewicht = -1, größe = -1, bmi = -1;
+Console.Write("Bitte Namen eingeben:");
+string name = Console.ReadLine();
+Console.Write("Bitte Gewicht eingeben:");
+string stringgewicht = Console.ReadLine();
+bool gewichtBool = double.TryParse(stringgewicht, out gewicht);
+if (gewichtBool == true)
+{
+    Console.Write("Bitte größe in Meter eingeben:");
+    bool größeBool = double.TryParse(Console.ReadLine(), out größe);
+    if (größeBool == true && größe != 0)
+    {
+        bmi = gewicht / (größe * größe);
+        if (bmi <= 18.5)
+        {
+            Console.WriteLine($"Hallo {name}, dein Bmi ist{bmi:F2} bei einer Größe von {größe}");
+            Console.WriteLine($"BMI: Untergewicht");
+        }
+        else if (bmi <= 25.0)
+        {
+            Console.WriteLine($"Hallo {name}, dein Bmi ist{bmi:F2} bei einer Größe von {größe}");
+            Console.WriteLine("BMI:Normalgewicht");
+        }
+        else if (bmi <= 30.0)
+        {
+            Console.WriteLine($"Hallo {name}, dein Bmi ist{bmi:F2} bei einer Größe von {größe}");
+            Console.WriteLine("BMI:Übergewicht");
+        }
+        else
+        {
+            Console.WriteLine($"Hallo {name}, dein Bmi ist{bmi:F2} bei einer Größe von {größe}");
+            Console.WriteLine("BMI:Starkes Übergewicht");
+        }
+    }
+    else
+    {
+        Console.WriteLine("Fehler - Größe muss postiv sein");
+    }
+}
+else
+{
+    Console.WriteLine("Fehler - Ungültige Eingabe");
+}
 
 // ── Schritt 1: Programmtitel ausgeben ───────────────────────
 // Tipp: Nutze Console.WriteLine() für die Titelbox.
