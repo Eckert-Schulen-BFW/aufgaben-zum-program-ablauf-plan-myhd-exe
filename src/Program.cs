@@ -42,22 +42,22 @@ if (gewichtBool == true && gewicht >= 0)
         bmi = gewicht / (größe * größe); // bmi ausrechnen
         if (bmi < 18.5)
         {
-            Console.WriteLine($"Hallo {name}, dein Bmi ist{bmi:F2} bei einer Größe von {größe}");
+            Console.WriteLine($"Hallo {name}, dein Bmi ist {bmi:F2} bei einer Größe von {größe}");
             Console.WriteLine($"BMI: Untergewicht");
         }
         else if (bmi < 25.0)
         {
-            Console.WriteLine($"Hallo {name}, dein Bmi ist{bmi:F2} bei einer Größe von {größe}");
+            Console.WriteLine($"Hallo {name}, dein Bmi ist {bmi:F2} bei einer Größe von {größe}");
             Console.WriteLine("BMI:Normalgewicht");
         }
         else if (bmi < 30.0)
         {
-            Console.WriteLine($"Hallo {name}, dein Bmi ist{bmi:F2} bei einer Größe von {größe}");
+            Console.WriteLine($"Hallo {name}, dein Bmi ist {bmi:F2} bei einer Größe von {größe}");
             Console.WriteLine("BMI:Übergewicht");
         }
         else
         {
-            Console.WriteLine($"Hallo {name}, dein Bmi ist{bmi:F2} bei einer Größe von {größe}");
+            Console.WriteLine($"Hallo {name}, dein Bmi ist {bmi:F2} bei einer Größe von {größe}");
             Console.WriteLine("BMI:Starkes Übergewicht");
         }
     }
